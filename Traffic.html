@@ -1,0 +1,91 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.7.1/aframe.min.js"></script>
+  </head>
+  <body>
+DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
+</head>
+
+<body>
+<a-scene>
+
+    <!-- กล้อง -->
+    <a-camera position="0 3 10" rotation="-20 0 0"></a-camera>
+
+    <!-- ท้องฟ้า -->
+    <a-sky color="#87CEEB"></a-sky>
+
+    <!-- พื้น -->
+    <a-plane rotation="-90 0 0"
+             width="30"
+             height="30"
+             color="#666666">
+    </a-plane>
+
+    <!-- ถนน 1 ทาง -->
+    <a-box position="0 0.01 0"
+           width="8"
+           height="0.02"
+           depth="20"
+           color="#333333">
+    </a-box>
+
+    <!-- ขอบถนน 1 ด้าน -->
+    <a-box position="-4 0.05 0"
+           width="0.3"
+           height="0.1"
+           depth="20"
+           color="white">
+    </a-box>
+
+    <!-- ทางม้าลาย -->
+    <a-box position="-2 0.02 -2" width="0.2" height="0.05" depth="3" color="white"></a-box>
+    <a-box position="-1.5 0.02 -2" width="0.2" height="0.05" depth="3" color="white"></a-box>
+    <a-box position="-1 0.02 -2" width="0.2" height="0.05" depth="3" color="white"></a-box>
+    <a-box position="-0.5 0.02 -2" width="0.2" height="0.05" depth="3" color="white"></a-box>
+    <a-box position="0 0.02 -2" width="0.2" height="0.05" depth="3" color="white"></a-box>
+    <a-box position="0.5 0.02 -2" width="0.2" height="0.05" depth="3" color="white"></a-box>
+    <a-box position="1 0.02 -2" width="0.2" height="0.05" depth="3" color="white"></a-box>
+    <a-box position="1.5 0.02 -2" width="0.2" height="0.05" depth="3" color="white"></a-box>
+    <a-box position="2 0.02 -2" width="0.2" height="0.05" depth="3" color="white"></a-box>
+
+    <!-- เสาไฟจราจร -->
+    <a-cylinder position="3 1.5 -4"
+                radius="0.08"
+                height="3"
+                color="gray">
+    </a-cylinder>
+
+    <!-- กล่องไฟ -->
+    <a-box position="3 3 -4"
+           width="0.5"
+           height="1.2"
+           depth="0.3"
+           color="#222">
+    </a-box>
+
+    <!-- ไฟแดง -->
+    <a-sphere position="3 3.35 -3.82"
+              radius="0.08"
+              color="red">
+    </a-sphere>
+
+    <!-- ไฟเหลือง -->
+    <a-sphere position="3 3.0 -3.82"
+              radius="0.08"
+              color="yellow">
+    </a-sphere>
+
+    <!-- ไฟเขียว -->
+    <a-sphere position="3 2.65 -3.82"
+              radius="0.08"
+              color="green">
+    </a-sphere>
+
+</a-scene>
+</body>
+</html>
